@@ -18,7 +18,8 @@ export class HomeComponent implements OnInit {
        n:'',
        endereco : '',
        complemento: '',
-       obs: ''
+       obs: '',
+       sus: ''
     }
   constructor() { }
 

@@ -13,31 +13,39 @@
 </div>
 <div style = "margin: 100px;">
 
-  <div style = " margin: 50px;">
-    <label>Atendimento : <span style = "color:red">*</span></label>
-    <select name="select" name = "atendimento" [(ngModel)] = "cadastro.atendimento">
-      <option value="EMISSÃO DE RG">EMISSÃO DE RG</option>
-      <option value="EMISSÃO DE CERTIDÃO DE NASCIMENTO" selected>EMISSÃO DE CERTIDÃO DE NASCIMENTO</option>
-      <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE NASCIMENTO</option>
-      <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE CASAMENTO</option>
-      <option value="REGULARIZAÇÃO DE REGISTRO DE ÓBITO">REGULARIZAÇÃO DE REGISTRO DE ÓBITO</option>
-      <option value="RETIFICAÇÃO DE REGISTRO CIVIL">RETIFICAÇÃO DE REGISTRO CIVIL</option>
-      <option value="ATENDIMENTO AO CONSUMIDOR - PROCON">ATENDIMENTO AO CONSUMIDOR - PROCON</option>
-      <option value="SERVIÇOS DE ODONTOLOGIA">SERVIÇOS DE ODONTOLOGIA</option>
-      <option value="EXAMES DE ULTRASSONOGRAFIA">EXAMES DE ULTRASSONOGRAFIA</option>
-      <option value="EXAMES DE ANÁLISES CLÍNICAS">EXAMES DE ANÁLISES CLÍNICAS</option>
-      <option value="BPC NA ESCOLA">BPC NA ESCOLA</option>
-      <option value="VACINAÇÃO PARA ADULTOS E CRIANÇAS">VACINAÇÃO PARA ADULTOS E CRIANÇAS</option>
-      <option value="VACINAÇÃO E TESTE RÁPIDO DE COVID-19">VACINAÇÃO E TESTE RÁPIDO DE COVID-19</option>
-      <option value="CORTE DE CABELO FEMININO">CORTE DE CABELO FEMININO</option>
-      <option value="CORTE DE CABELO MASCULINO">CORTE DE CABELO MASCULINO</option>
-      <option value="DESIGN DE SOBRANCELHAS">DESIGN DE SOBRANCELHAS</option>
-      <option value="INFORMAÇÕES DO PROGRAMA AUXÍLIO BRASIL - PAB">INFORMAÇÕES DO PROGRAMA AUXÍLIO BRASIL - PAB</option>
-      <option value="AVALIAÇÃO NUTRICIONAL">AVALIAÇÃO NUTRICIONAL</option>
-      <option value="CONSULTA MÉDICA">CONSULTA MÉDICA</option>
-      <option value="OFTALMOLOSITA">OFTALMOLOSITA</option>
+  <div class = "form complemento">
+    <div>
+      <label>Atendimento : <span style = "color:red">*</span></label>
+      <select name="select" name = "atendimento" [(ngModel)] = "cadastro.atendimento">
+        <option value="EMISSÃO DE RG">EMISSÃO DE RG</option>
+        <option value="EMISSÃO DE CERTIDÃO DE NASCIMENTO" selected>EMISSÃO DE CERTIDÃO DE NASCIMENTO</option>
+        <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE NASCIMENTO</option>
+        <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE CASAMENTO</option>
+        <option value="REGULARIZAÇÃO DE REGISTRO DE ÓBITO">REGULARIZAÇÃO DE REGISTRO DE ÓBITO</option>
+        <option value="RETIFICAÇÃO DE REGISTRO CIVIL">RETIFICAÇÃO DE REGISTRO CIVIL</option>
+        <option value="ATENDIMENTO AO CONSUMIDOR - PROCON">ATENDIMENTO AO CONSUMIDOR - PROCON</option>
+        <option value="SERVIÇOS DE ODONTOLOGIA">SERVIÇOS DE ODONTOLOGIA</option>
+        <option value="EXAMES DE ULTRASSONOGRAFIA">EXAMES DE ULTRASSONOGRAFIA</option>
+        <option value="EXAMES DE ANÁLISES CLÍNICAS">EXAMES DE ANÁLISES CLÍNICAS</option>
+        <option value="BPC NA ESCOLA">BPC NA ESCOLA</option>
+        <option value="VACINAÇÃO PARA ADULTOS E CRIANÇAS">VACINAÇÃO PARA ADULTOS E CRIANÇAS</option>
+        <option value="VACINAÇÃO E TESTE RÁPIDO DE COVID-19">VACINAÇÃO E TESTE RÁPIDO DE COVID-19</option>
+        <option value="CORTE DE CABELO FEMININO">CORTE DE CABELO FEMININO</option>
+        <option value="CORTE DE CABELO MASCULINO">CORTE DE CABELO MASCULINO</option>
+        <option value="DESIGN DE SOBRANCELHAS">DESIGN DE SOBRANCELHAS</option>
+        <option value="INFORMAÇÕES DO PROGRAMA AUXÍLIO BRASIL - PAB">INFORMAÇÕES DO PROGRAMA AUXÍLIO BRASIL - PAB</option>
+        <option value="AVALIAÇÃO NUTRICIONAL">AVALIAÇÃO NUTRICIONAL</option>
+        <option value="CONSULTA MÉDICA">CONSULTA MÉDICA</option>
+        <option value="OFTALMOLOSITA">OFTALMOLOSITA</option>
 
-    </select>
+      </select>
+    </div>
+
+    <div>
+      <label>N° do cartão SUS (opcional):</label>
+      <input class="w3-input" name="nome" type="text" required [(ngModel)] = "cadastro.sus">
+    </div>
+
   </div>
 
 <div class = "form nome">
@@ -106,11 +114,11 @@
 
 <div class = "form complemento">
   <div>
-    <label>Complemento :</label>
+    <label>Complemento (opcional):</label>
     <input class="w3-input" type="text" name = "complemento" [(ngModel)] = "cadastro.complemento">
   </div>
   <div>
-    <label>Obs :</label>
+    <label>OBS (opcional):</label>
     <input class="w3-input" type="text" name = "obs" [(ngModel)] = "cadastro.obs">
   </div>
 
