@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
        bairro: '',
        telefone: '',
        cpf:'',
+       rg:'',
        n:'',
        endereco : '',
        complemento: '',
@@ -50,6 +51,7 @@ export class HomeComponent implements OnInit {
     this.cadastro.telefone = '';
     this.cadastro.n = '';
     this.cadastro.cpf = '';
+    this.cadastro.rg = '';
     this.cadastro.complemento = '';
     this.cadastro.sus = '';
     this.cadastro.obs = '';
