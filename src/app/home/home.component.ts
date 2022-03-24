@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
        nome : '',
        atendimento: '',
        bairro: '',
-       rua: '',
        telefone: '',
        cpf:'',
        n:'',
@@ -48,7 +47,6 @@ export class HomeComponent implements OnInit {
     this.cadastro.nome = '';
     this.cadastro.atendimento = '';
     this.cadastro.bairro = '';
-    this.cadastro.rua = '';
     this.cadastro.telefone = '';
     this.cadastro.n = '';
     this.cadastro.cpf = '';

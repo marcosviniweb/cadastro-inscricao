@@ -53,6 +53,27 @@
     <label>Nome Completo : <span style = "color:red" >*</span></label>
     <input class="w3-input" name="nome" type="text" required [(ngModel)] = "cadastro.nome">
   </div>
+
+  <div>
+    <label>Telefone : <span style = "color:red">*</span></label>
+    <input class="w3-input" name = "endereco" type="text" required [(ngModel)] = "cadastro.telefone">
+  </div>
+
+  <div>
+    <label>CPF : <span style = "color:red">*</span></label>
+    <input class="w3-input" type="text" required [(ngModel)] = "cadastro.cpf">
+  </div>
+
+
+
+</div>
+
+
+<div class = "form endereco">
+  <div>
+    <label>Endereço : <span style = "color:red">*</span></label>
+    <input class="w3-input" name = "endereco" type="text" required [(ngModel)] = "cadastro.endereco">
+  </div>
   <div>
     <label>Bairro : <span style = "color:red">*</span></label>
     <select name="bairro" [(ngModel)] = "cadastro.bairro">
@@ -82,29 +103,7 @@
       <option value="PALMARES 1 E 2">PALMARES 1 E 2</option>
     </select>
   </div>
-  <div>
-    <label>CPF : <span style = "color:red">*</span></label>
-    <input class="w3-input" type="text" required [(ngModel)] = "cadastro.cpf">
-  </div>
 
-
-
-</div>
-
-
-<div class = "form endereco">
-  <div>
-    <label>Endereço : <span style = "color:red">*</span></label>
-    <input class="w3-input" name = "endereco" type="text" required [(ngModel)] = "cadastro.endereco">
-  </div>
-  <div>
-    <label>Telefone : <span style = "color:red">*</span></label>
-    <input class="w3-input" name = "endereco" type="text" required [(ngModel)] = "cadastro.telefone">
-  </div>
-  <div>
-    <label>Rua : <span style = "color:red">*</span></label>
-    <input class="w3-input" type="text" name = "rua" required [(ngModel)] = "cadastro.rua">
-  </div>
   <div>
     <label>N° : <span style = "color:red">*</span></label>
     <input class="w3-input" type="text" name = "n" required [(ngModel)] = "cadastro.n">
@@ -126,7 +125,7 @@
 
 </div>
 <div align = "center">
-  <button name="button" (click) = "cadastroform()">Enviar </button>
+  <button name="button" (click) = "cadastroform()" *ngIf="cadastro.atendimento && cadastro.nome && cadastro.bairro && cadastro.cpf && cadastro.endereco && cadastro.telefone && cadastro.n  ">Enviar </button>
 </div>
 
 </div>
