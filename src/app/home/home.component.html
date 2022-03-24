@@ -18,6 +18,7 @@
     <select name="select" name = "atendimento" [(ngModel)] = "cadastro.atendimento">
       <option value="EMISSÃO DE RG">EMISSÃO DE RG</option>
       <option value="EMISSÃO DE CERTIDÃO DE NASCIMENTO" selected>EMISSÃO DE CERTIDÃO DE NASCIMENTO</option>
+      <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE NASCIMENTO</option>
       <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE CASAMENTO</option>
       <option value="REGULARIZAÇÃO DE REGISTRO DE ÓBITO">REGULARIZAÇÃO DE REGISTRO DE ÓBITO</option>
       <option value="RETIFICAÇÃO DE REGISTRO CIVIL">RETIFICAÇÃO DE REGISTRO CIVIL</option>
@@ -137,5 +138,22 @@
     Endereço: {{cadastro.endereco}} <br>
     Complemento: {{cadastro.complemento}} <br>
     OBS: {{cadastro.obs}} <br>
+
+    <BR><BR><BR>
+  <div class = "form complemento ">
+          <div style = "text-align: center;">
+
+            _____________________________ <br>
+            Assinatura do Usuário:
+
+          </div>
+
+          <div style = "text-align: center;">
+
+            _____________________________ <br>
+            Assinatura do Cadastrador:
+
+          </div>
+  </div>
 
 </div>
