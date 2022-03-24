@@ -13,7 +13,7 @@
 </div>
 <div style = "margin: 100px;">
 
-  <div class = "form complemento">
+  <div class = "form atendimento">
     <div>
       <label>Atendimento : <span style = "color:red">*</span></label>
       <select name="select" name = "atendimento" [(ngModel)] = "cadastro.atendimento">
@@ -38,6 +38,35 @@
         <option value="CONSULTA MÉDICA">CONSULTA MÉDICA</option>
         <option value="OFTALMOLOSITA">OFTALMOLOSITA</option>
 
+      </select>
+    </div>
+    <div>
+      <label>Bairro do Atendimento : <span style = "color:red">*</span></label>
+      <select name="bairro" [(ngModel)] = "cadastro.bairro">
+        <option value="GETAT">GETAT</option>
+        <option value="COHAB" selected>COHAB</option>
+        <option value="SANTA  IZABEL">SANTA  IZABEL</option>
+        <option value="JARDIM PARAÍSO">JARDIM PARAÍSO</option>
+        <option value="JARDIM MARILUCY">JARDIM MARILUCY</option>
+        <option value="MATINHA">MATINHA</option>
+        <option value="NOVA MATINHA">NOVA MATINHA</option>
+        <option value="CRISTO VIVE">CRISTO VIVE</option>
+        <option value="JARDIM COLORADO">JARDIM COLORADO</option>
+        <option value="VILA PERMANENTE">VILA PERMANENTE</option>
+        <option value="LIBERDADE">LIBERDADE</option>
+        <option value="SÃO FRANCISCO">SÃO FRANCISCO</option>
+        <option value="SÃO SEBASTIÃO">SÃO SEBASTIÃO</option>
+        <option value="NOVA CONQUISTA">NOVA CONQUISTA</option>
+        <option value="SERRA AZUL">SERRA AZUL</option>
+        <option value="PARAVOA">PARAVOA</option>
+        <option value="PIMENTAL">PIMENTAL</option>
+        <option value="BURITI">BURITI</option>
+        <option value="BEIRA RIO">BEIRA RIO</option>
+        <option value="JAQUEIRA">JAQUEIRA</option>
+        <option value="PASSARINHO">PASSARINHO</option>
+        <option value="NOVA TUCURUÍ">NOVA TUCURUÍ</option>
+        <option value="VILINHA DO GETAT">VILINHA DO GETAT</option>
+        <option value="PALMARES 1 E 2">PALMARES 1 E 2</option>
       </select>
     </div>
 
@@ -81,8 +110,8 @@
     <input class="w3-input" name = "endereco" type="text" required [(ngModel)] = "cadastro.endereco">
   </div>
   <div>
-    <label>Bairro : <span style = "color:red">*</span></label>
-    <select name="bairro" [(ngModel)] = "cadastro.bairro">
+    <label>Bairro / Cidadão : <span style = "color:red">*</span></label>
+    <select name="bairro" [(ngModel)] = "cadastro.bairrocidadao">
       <option value="GETAT">GETAT</option>
       <option value="COHAB" selected>COHAB</option>
       <option value="SANTA  IZABEL">SANTA  IZABEL</option>
@@ -136,18 +165,20 @@
 
 </div>
 
-<div style = "margin: 50px; display: none;" id = "confirmacao" class = "confirmacao">
+<div style = "margin: 50px; display: none; " id = "confirmacao" class = "confirmacao">
 
   <div align = "left">
     <button name="button" (click) = "voltar()">Voltar </button>
   </div>
     <h2> Comprovante ficha de Inscrição  - Data: {{data | date: 'dd/M/yy'}} às {{data | date: 'h:mm a' }} </h2>
-   <h3> Atendimento: {{cadastro.atendimento}} </h3>
+   <h3> Atendimento: {{cadastro.atendimento}} <br>
+    Bairro Atendido: {{cadastro.bairro}}    </h3>
+   <h3 style = "margin-top: -10px; margin-bottom: 2px;"> Dados do cidadão: </h3>
     Nome: {{cadastro.nome}} <br>
     CPF: {{cadastro.cpf}} <br>
     RG: {{cadastro.rg}} <br>
     Telefone: {{cadastro.telefone}} <br>
-    Bairro: {{cadastro.bairro}} <br>
+    Bairro: {{cadastro.bairrocidadao}} <br>
     Número : {{cadastro.n}} <br>
     Endereço: {{cadastro.endereco}} <br>
     Cartão SUS: {{cadastro.sus}} <br>

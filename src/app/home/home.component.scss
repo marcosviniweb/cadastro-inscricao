@@ -44,6 +44,10 @@ select {
   gap: 20px;
 }
 
+.atendimento{
+  grid-template-columns: 40% 40% 20% ;
+  gap: 20px;
+}
 button {
   background-color: #003399 ; /* Green */
   border: none;

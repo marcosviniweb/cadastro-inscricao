@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
        telefone: '',
        cpf:'',
        rg:'',
+       bairrocidadao:'',
        n:'',
        endereco : '',
        complemento: '',
@@ -56,6 +57,7 @@ export class HomeComponent implements OnInit {
     this.cadastro.sus = '';
     this.cadastro.obs = '';
     this.cadastro.endereco = '';
+    this.cadastro.bairrocidadao = '';
 
 
     let div = window.document.getElementById('confirmacao')!;
