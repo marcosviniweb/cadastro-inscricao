@@ -1,180 +1,184 @@
-<div class = "topo column">
+<div class="topo column">
   <div>
-    <img height = "120px" style = "margin: 20px;" src="../../assets/img/Logo-Prefeirtura-de-Tucurui.png" alt="">
+    <img height="120px" style="margin: 20px;" src="../../assets/img/Logo-Prefeirtura-de-Tucurui.png" alt="">
   </div>
-     <div>
-      <h2 style = "text-align: left; color: black; margin-top: 80PX;">CADASTRO DE PESSOAS PARA ATENDIMENTO - AÇÕES ITINERANTE</h2>
-     </div>
+  <div>
+    <h2 style="text-align: left; color: black; margin-top: 80PX;">CADASTRO DE PESSOAS PARA ATENDIMENTO - AÇÕES
+      ITINERANTE</h2>
+  </div>
 </div>
 
-<div id = "formgeral">
-<div>
-  <h2 style  = "text-align: center; margin-top: 50px;"> Formulário de Inscrição: </h2>
-</div>
-<div style = "margin: 100px;">
+<div id="formgeral">
+  <div>
+    <h2 style="text-align: center; margin-top: 50px;"> Formulário de Inscrição: </h2>
+  </div>
+  <div style="margin: 100px;">
 
-  <div class = "form atendimento">
-    <div>
-      <label>Atendimento : <span style = "color:red">*</span></label>
-      <select name="select" name = "atendimento" [(ngModel)] = "cadastro.atendimento">
-        <option value="EMISSÃO DE RG">EMISSÃO DE RG</option>
-        <option value="EMISSÃO DE CERTIDÃO DE NASCIMENTO" selected>EMISSÃO DE CERTIDÃO DE NASCIMENTO</option>
-        <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE NASCIMENTO</option>
-        <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE CASAMENTO</option>
-        <option value="REGULARIZAÇÃO DE REGISTRO DE ÓBITO">REGULARIZAÇÃO DE REGISTRO DE ÓBITO</option>
-        <option value="RETIFICAÇÃO DE REGISTRO CIVIL">RETIFICAÇÃO DE REGISTRO CIVIL</option>
-        <option value="ATENDIMENTO AO CONSUMIDOR - PROCON">ATENDIMENTO AO CONSUMIDOR - PROCON</option>
-        <option value="SERVIÇOS DE ODONTOLOGIA">SERVIÇOS DE ODONTOLOGIA</option>
-        <option value="EXAMES DE ULTRASSONOGRAFIA">EXAMES DE ULTRASSONOGRAFIA</option>
-        <option value="EXAMES DE ANÁLISES CLÍNICAS">EXAMES DE ANÁLISES CLÍNICAS</option>
-        <option value="BPC NA ESCOLA">BPC NA ESCOLA</option>
-        <option value="VACINAÇÃO PARA ADULTOS E CRIANÇAS">VACINAÇÃO PARA ADULTOS E CRIANÇAS</option>
-        <option value="VACINAÇÃO E TESTE RÁPIDO DE COVID-19">VACINAÇÃO E TESTE RÁPIDO DE COVID-19</option>
-        <option value="CORTE DE CABELO FEMININO">CORTE DE CABELO FEMININO</option>
-        <option value="CORTE DE CABELO MASCULINO">CORTE DE CABELO MASCULINO</option>
-        <option value="DESIGN DE SOBRANCELHAS">DESIGN DE SOBRANCELHAS</option>
-        <option value="INFORMAÇÕES DO PROGRAMA AUXÍLIO BRASIL - PAB">INFORMAÇÕES DO PROGRAMA AUXÍLIO BRASIL - PAB</option>
-        <option value="AVALIAÇÃO NUTRICIONAL">AVALIAÇÃO NUTRICIONAL</option>
-        <option value="CONSULTA MÉDICA">CONSULTA MÉDICA</option>
-        <option value="OFTALMOLOSITA">OFTALMOLOSITA</option>
+    <div class="form atendimento">
+      <div>
+        <label>Atendimento : <span style="color:red">*</span></label>
+        <select name="select" name="atendimento" [(ngModel)]="cadastro.atendimento">
+          <option value="EMISSÃO DE RG">EMISSÃO DE RG</option>
+          <option value="EMISSÃO DE CERTIDÃO DE NASCIMENTO" selected>EMISSÃO DE CERTIDÃO DE NASCIMENTO</option>
+          <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE NASCIMENTO</option>
+          <option value="SEGUNDA VIA DE CERTIDÃO DE CASAMENTO">SEGUNDA VIA DE CERTIDÃO DE CASAMENTO</option>
+          <option value="REGULARIZAÇÃO DE REGISTRO DE ÓBITO">REGULARIZAÇÃO DE REGISTRO DE ÓBITO</option>
+          <option value="RETIFICAÇÃO DE REGISTRO CIVIL">RETIFICAÇÃO DE REGISTRO CIVIL</option>
+          <option value="ATENDIMENTO AO CONSUMIDOR - PROCON">ATENDIMENTO AO CONSUMIDOR - PROCON</option>
+          <option value="SERVIÇOS DE ODONTOLOGIA">SERVIÇOS DE ODONTOLOGIA</option>
+          <option value="EXAMES DE ULTRASSONOGRAFIA">EXAMES DE ULTRASSONOGRAFIA</option>
+          <option value="EXAMES DE ANÁLISES CLÍNICAS">EXAMES DE ANÁLISES CLÍNICAS</option>
+          <option value="BPC NA ESCOLA">BPC NA ESCOLA</option>
+          <option value="VACINAÇÃO PARA ADULTOS E CRIANÇAS">VACINAÇÃO PARA ADULTOS E CRIANÇAS</option>
+          <option value="VACINAÇÃO E TESTE RÁPIDO DE COVID-19">VACINAÇÃO E TESTE RÁPIDO DE COVID-19</option>
+          <option value="CORTE DE CABELO FEMININO">CORTE DE CABELO FEMININO</option>
+          <option value="CORTE DE CABELO MASCULINO">CORTE DE CABELO MASCULINO</option>
+          <option value="DESIGN DE SOBRANCELHAS">DESIGN DE SOBRANCELHAS</option>
+          <option value="INFORMAÇÕES DO PROGRAMA AUXÍLIO BRASIL - PAB">INFORMAÇÕES DO PROGRAMA AUXÍLIO BRASIL - PAB
+          </option>
+          <option value="AVALIAÇÃO NUTRICIONAL">AVALIAÇÃO NUTRICIONAL</option>
+          <option value="CONSULTA MÉDICA">CONSULTA MÉDICA</option>
+          <option value="OFTALMOLOSITA">OFTALMOLOSITA</option>
 
-      </select>
+        </select>
+      </div>
+      <div>
+        <label>Bairro do Atendimento : <span style="color:red">*</span></label>
+        <select name="bairro" [(ngModel)]="cadastro.bairro">
+          <option value="GETAT">GETAT</option>
+          <option value="COHAB" selected>COHAB</option>
+          <option value="SANTA  IZABEL">SANTA IZABEL</option>
+          <option value="JARDIM PARAÍSO">JARDIM PARAÍSO</option>
+          <option value="JARDIM MARILUCY">JARDIM MARILUCY</option>
+          <option value="MATINHA">MATINHA</option>
+          <option value="NOVA MATINHA">NOVA MATINHA</option>
+          <option value="CRISTO VIVE">CRISTO VIVE</option>
+          <option value="JARDIM COLORADO">JARDIM COLORADO</option>
+          <option value="VILA PERMANENTE">VILA PERMANENTE</option>
+          <option value="LIBERDADE">LIBERDADE</option>
+          <option value="SÃO FRANCISCO">SÃO FRANCISCO</option>
+          <option value="SÃO SEBASTIÃO">SÃO SEBASTIÃO</option>
+          <option value="NOVA CONQUISTA">NOVA CONQUISTA</option>
+          <option value="SERRA AZUL">SERRA AZUL</option>
+          <option value="PARAVOA">PARAVOA</option>
+          <option value="PIMENTAL">PIMENTAL</option>
+          <option value="BURITI">BURITI</option>
+          <option value="BEIRA RIO">BEIRA RIO</option>
+          <option value="JAQUEIRA">JAQUEIRA</option>
+          <option value="PASSARINHO">PASSARINHO</option>
+          <option value="NOVA TUCURUÍ">NOVA TUCURUÍ</option>
+          <option value="VILINHA DO GETAT">VILINHA DO GETAT</option>
+          <option value="PALMARES 1 E 2">PALMARES 1 E 2</option>
+        </select>
+      </div>
+
+      <div>
+        <label>N° do cartão SUS (opcional):</label>
+        <input class="w3-input" name="nome" type="text" required [(ngModel)]="cadastro.sus">
+      </div>
+
     </div>
-    <div>
-      <label>Bairro do Atendimento : <span style = "color:red">*</span></label>
-      <select name="bairro" [(ngModel)] = "cadastro.bairro">
-        <option value="GETAT">GETAT</option>
-        <option value="COHAB" selected>COHAB</option>
-        <option value="SANTA  IZABEL">SANTA  IZABEL</option>
-        <option value="JARDIM PARAÍSO">JARDIM PARAÍSO</option>
-        <option value="JARDIM MARILUCY">JARDIM MARILUCY</option>
-        <option value="MATINHA">MATINHA</option>
-        <option value="NOVA MATINHA">NOVA MATINHA</option>
-        <option value="CRISTO VIVE">CRISTO VIVE</option>
-        <option value="JARDIM COLORADO">JARDIM COLORADO</option>
-        <option value="VILA PERMANENTE">VILA PERMANENTE</option>
-        <option value="LIBERDADE">LIBERDADE</option>
-        <option value="SÃO FRANCISCO">SÃO FRANCISCO</option>
-        <option value="SÃO SEBASTIÃO">SÃO SEBASTIÃO</option>
-        <option value="NOVA CONQUISTA">NOVA CONQUISTA</option>
-        <option value="SERRA AZUL">SERRA AZUL</option>
-        <option value="PARAVOA">PARAVOA</option>
-        <option value="PIMENTAL">PIMENTAL</option>
-        <option value="BURITI">BURITI</option>
-        <option value="BEIRA RIO">BEIRA RIO</option>
-        <option value="JAQUEIRA">JAQUEIRA</option>
-        <option value="PASSARINHO">PASSARINHO</option>
-        <option value="NOVA TUCURUÍ">NOVA TUCURUÍ</option>
-        <option value="VILINHA DO GETAT">VILINHA DO GETAT</option>
-        <option value="PALMARES 1 E 2">PALMARES 1 E 2</option>
-      </select>
+
+    <div class="form nome">
+      <div>
+        <label>Nome Completo : <span style="color:red">*</span></label>
+        <input class="w3-input" name="nome" type="text" required [(ngModel)]="cadastro.nome">
+      </div>
+
+      <div>
+        <label>Telefone : <span style="color:red">*</span></label>
+        <input class="w3-input" name="endereco" type="text" required [(ngModel)]="cadastro.telefone">
+      </div>
+
+      <div>
+        <label>CPF : <span style="color:red">*</span></label>
+        <input class="w3-input" type="text" required [(ngModel)]="cadastro.cpf">
+      </div>
+
+      <div>
+        <label>RG :</label>
+        <input class="w3-input" type="text" required [(ngModel)]="cadastro.rg">
+      </div>
+
+
+
+
     </div>
 
-    <div>
-      <label>N° do cartão SUS (opcional):</label>
-      <input class="w3-input" name="nome" type="text" required [(ngModel)] = "cadastro.sus">
+
+    <div class="form endereco">
+      <div>
+        <label>Endereço : <span style="color:red">*</span></label>
+        <input class="w3-input" name="endereco" type="text" required [(ngModel)]="cadastro.endereco">
+      </div>
+      <div>
+        <label>Bairro / Cidadão : <span style="color:red">*</span></label>
+        <input class="w3-input" name="endereco" type="text" required [(ngModel)]="cadastro.bairrocidadao">
+      </div>
+
+      <div>
+        <label>N° : <span style="color:red">*</span></label>
+        <input class="w3-input" type="text" name="n" required [(ngModel)]="cadastro.n">
+      </div>
+    </div>
+
+
+    <div class="form complemento">
+      <div>
+        <label>Complemento (opcional):</label>
+        <input class="w3-input" type="text" name="complemento" [(ngModel)]="cadastro.complemento">
+      </div>
+      <div>
+        <label>OBS (opcional):</label>
+        <input class="w3-input" type="text" name="obs" [(ngModel)]="cadastro.obs">
+      </div>
+
     </div>
 
   </div>
-
-<div class = "form nome">
-  <div>
-    <label>Nome Completo : <span style = "color:red" >*</span></label>
-    <input class="w3-input" name="nome" type="text" required [(ngModel)] = "cadastro.nome">
-  </div>
-
-  <div>
-    <label>Telefone : <span style = "color:red">*</span></label>
-    <input class="w3-input" name = "endereco" type="text" required [(ngModel)] = "cadastro.telefone">
-  </div>
-
-  <div>
-    <label>CPF : <span style = "color:red">*</span></label>
-    <input class="w3-input" type="text" required [(ngModel)] = "cadastro.cpf">
-  </div>
-
-  <div>
-    <label>RG :</label>
-    <input class="w3-input" type="text" required [(ngModel)] = "cadastro.rg">
-  </div>
-
-
-
-
-</div>
-
-
-<div class = "form endereco">
-  <div>
-    <label>Endereço : <span style = "color:red">*</span></label>
-    <input class="w3-input" name = "endereco" type="text" required [(ngModel)] = "cadastro.endereco">
-  </div>
-  <div>
-    <label>Bairro / Cidadão : <span style = "color:red">*</span></label>
-    <input class="w3-input" name = "endereco" type="text" required [(ngModel)] = "cadastro.bairrocidadao">
-  </div>
-
-  <div>
-    <label>N° : <span style = "color:red">*</span></label>
-    <input class="w3-input" type="text" name = "n" required [(ngModel)] = "cadastro.n">
-  </div>
-</div>
-
-
-<div class = "form complemento">
-  <div>
-    <label>Complemento (opcional):</label>
-    <input class="w3-input" type="text" name = "complemento" [(ngModel)] = "cadastro.complemento">
-  </div>
-  <div>
-    <label>OBS (opcional):</label>
-    <input class="w3-input" type="text" name = "obs" [(ngModel)] = "cadastro.obs">
+  <div align="center">
+    <button name="button" (click)="cadastroform()"
+      *ngIf="cadastro.atendimento && cadastro.nome && cadastro.bairro && cadastro.cpf && cadastro.endereco && cadastro.telefone && cadastro.n  ">Enviar
+    </button>
   </div>
 
 </div>
 
-</div>
-<div align = "center">
-  <button name="button" (click) = "cadastroform()" *ngIf="cadastro.atendimento && cadastro.nome && cadastro.bairro && cadastro.cpf && cadastro.endereco && cadastro.telefone && cadastro.n  ">Enviar </button>
-</div>
+<div style="margin: 50px; display: none; " id="confirmacao" class="confirmacao">
 
-</div>
-
-<div style = "margin: 50px; display: none; " id = "confirmacao" class = "confirmacao">
-
-  <div align = "left">
-    <button name="button" (click) = "voltar()">Voltar </button>
+  <div align="left">
+    <button name="button" (click)="voltar()">Voltar </button>
   </div>
-    <h2> Comprovante ficha de Inscrição  - Data: {{data | date: 'dd/M/yy'}} às {{data | date: 'h:mm a' }} </h2>
-   <h3> Atendimento: {{cadastro.atendimento}} <br>
-    Bairro Atendido: {{cadastro.bairro}}    </h3>
-   <h3 style = "margin-top: -10px; margin-bottom: 2px;"> Dados do cidadão: </h3>
-    Nome: {{cadastro.nome}} <br>
-    CPF: {{cadastro.cpf}} <br>
-    RG: {{cadastro.rg}} <br>
-    Telefone: {{cadastro.telefone}} <br>
-    Bairro: {{cadastro.bairrocidadao}} <br>
-    Número : {{cadastro.n}} <br>
-    Endereço: {{cadastro.endereco}} <br>
-    Cartão SUS: {{cadastro.sus}} <br>
-    Complemento: {{cadastro.complemento}} <br>
-    OBS: {{cadastro.obs}} <br>
+  <h2> Comprovante ficha de Inscrição - Data: {{data | date: 'dd/M/yy'}} às {{data | date: 'h:mm a' }} </h2>
+  <h3> Atendimento: {{cadastro.atendimento}} <br>
+    Bairro Atendido: {{cadastro.bairro}} </h3>
+  <h3 style="margin-top: -10px; margin-bottom: 2px;"> Dados do cidadão: </h3>
+  Nome: {{cadastro.nome}} <br>
+  CPF: {{cadastro.cpf}} <br>
+  RG: {{cadastro.rg}} <br>
+  Telefone: {{cadastro.telefone}} <br>
+  Bairro: {{cadastro.bairrocidadao}} <br>
+  Número : {{cadastro.n}} <br>
+  Endereço: {{cadastro.endereco}} <br>
+  Cartão SUS: {{cadastro.sus}} <br>
+  Complemento: {{cadastro.complemento}} <br>
+  OBS: {{cadastro.obs}} <br>
 
-    <BR><BR><BR>
-  <div class = "form complemento ">
-          <div style = "text-align: center;">
+  <BR><BR><BR>
+  <div class="form complemento ">
+    <div style="text-align: center;">
 
-            _____________________________ <br>
-            Assinatura do Usuário:
+      _____________________________ <br>
+      Assinatura do Usuário:
 
-          </div>
+    </div>
 
-          <div style = "text-align: center;">
+    <div style="text-align: center;">
 
-            _____________________________ <br>
-            Assinatura do Cadastrador:
+      _____________________________ <br>
+      Assinatura do Cadastrador:
 
-          </div>
+    </div>
   </div>
 
 </div>
