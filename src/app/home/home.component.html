@@ -96,7 +96,7 @@
       </div>
 
       <div>
-        <label>RG :</label>
+        <label>RG (opcional) :</label>
         <input class="w3-input" type="text" required [(ngModel)]="cadastro.rg">
       </div>
 
@@ -137,6 +137,7 @@
 
   </div>
   <div align="center">
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" ></ngx-loading>
     <button name="button" (click)="cadastroform()"
       *ngIf="cadastro.atendimento && cadastro.nome && cadastro.bairro && cadastro.cpf && cadastro.endereco && cadastro.telefone && cadastro.n  ">Enviar
     </button>

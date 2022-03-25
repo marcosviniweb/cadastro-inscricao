@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -22,6 +23,8 @@ export class HomeComponent implements OnInit {
     obs: '',
     sus: ''
   }
+  public loading = false;
+
   constructor(private Api: ApiService) { }
 
   ngOnInit(): void {
@@ -29,9 +32,12 @@ export class HomeComponent implements OnInit {
 
 
   cadastroform() {
+    this.loading = true;
     this.Api.Cadastrar(this.cadastro).subscribe((res: any) => {
+
       console.log(res);
       if (res.status == 200) {
+        this.loading = false;
         this.data = new Date();
         let div = window.document.getElementById('confirmacao')!;
         let form = window.document.getElementById('formgeral')!;
