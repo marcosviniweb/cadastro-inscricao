@@ -26,7 +26,7 @@ export class ApiService {
     if (data.complemento) {
       complemento = data.complemento;
     }
-    if (data.sus) {
+    if (data.obs) {
       obs = data.obs;
     }
     return this.http.get(`${this.url}/${data.nome}/${data.atendimento}/${data.bairro}/${data.bairrocidadao}/${sus}/${data.cpf}/${data.telefone}/${rg}/${data.endereco}/${data.n}/${complemento}/${obs}`);
