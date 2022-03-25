@@ -13,6 +13,22 @@ export class ApiService {
   }
 
   Cadastrar(data: any): any {
-    return this.http.get(`${this.url}/${data.nome}/${data.atendimento}/${data.bairro}/${data.bairrocidadao}/${data.sus}/${data.cpf}/${data.telefone}/${data.rg}/${data.endereco}/${data.n}/${data.complemento}/${data.obs}`);
+    let sus = 0;
+    let rg = 0;
+    let complemento = 0;
+    let obs = 0;
+    if (data.sus) {
+      sus = data.sus;
+    }
+    if (data.rg) {
+      rg = data.rg;
+    }
+    if (data.complemento) {
+      complemento = data.complemento;
+    }
+    if (data.sus) {
+      obs = data.obs;
+    }
+    return this.http.get(`${this.url}/${data.nome}/${data.atendimento}/${data.bairro}/${data.bairrocidadao}/${sus}/${data.cpf}/${data.telefone}/${rg}/${data.endereco}/${data.n}/${complemento}/${obs}`);
   }
 }
